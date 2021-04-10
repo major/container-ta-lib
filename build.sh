@@ -4,7 +4,7 @@ set -euxo pipefail
 dnf -y upgrade
 dnf -y install gcc make
 
-wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+curl -O http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
 tar xf ta-lib-0.4.0-src.tar.gz
 pushd ta-lib
   ./configure
